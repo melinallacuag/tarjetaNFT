@@ -5,110 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Mei | NFT preview card component</title>
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
-    body{
-      margin: 0;
-      padding: 0;
-      font-size: 14px;
-      background: hsl(217, 54%, 11%);
-      color:  hsl(0, 0%, 100%);
-      font-family: 'Outfit';
-    }
-    .container{
-      height: 100vh;
-      display: grid;
-      justify-content: center;
-      align-content: center;
-    }
-    .container-code{
-      display: grid;
-      justify-content: center;
-      align-content: center;
-      grid-template-columns: 220px;
-      grid-template-rows: 200px ;
-      background:  hsl(216, 50%, 16%);
-      border-radius: 1rem;
-      padding: 1rem;
-      gap: 1rem;
-    }
-    .container-img img{
-      width: 100%;
-      height: 200px;
-    }
-    .container-text{
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .title{
-      font-size: 18px;
-      margin: 0;
-      font-weight: 600;
-
-    }
-    .description{
-      margin: 0;
-      font-size: 300;
-      color:hsl(215, 51%, 70%);
-    }
-    .container-price{
-      display: flex;
-      /* background: #123456; */
-      justify-content: space-between;
-      align-items: center;
-    }
-    .ethereum{
-display: flex;
-gap: .25rem;
-
-}
-    .text-ethereum{
-      margin: 0;
-      color: hsl(178, 100%, 50%);
-      font-size: 600;
-    }
-    .text-clock{
-      margin: 0;
-    }
-    .clock{
-      display: flex;
-gap: .25rem;
-color: hsl(215, 51%, 70%);
-
-    }
-    .code-hr{
-      border: .01px solid hsl(215, 32%, 27%);
-      margin: 0;
-    }
-    .text-info{
-      margin: 0;
-      font-weight: 400;
-    }
-    .text-create{
-      color:hsl(215, 51%, 70%); ;
-    }
-    .container-profile{
-      display: flex;
-      align-items: center;
-      gap: .5rem;
-    }
-    .container-profile img{
-      width: 25px;
-      height: 25px;
-      border: 1px solid #fff;
-      border-radius: 50%;
-    }
-  </style>
 </head>
 <body>
 <main class="container">
   <div class="container-code"> 
     <div class="container-img">
-      <img src="images/image-equilibrium.jpg" alt="">
+      <img src="images/image-equilibrium.jpg" alt="Image Equilibrium">
     </div>
     <div class="container-text">
       <h1 class="title"> Equilibrium #3429</h1>
@@ -124,11 +29,9 @@ color: hsl(215, 51%, 70%);
         <p class="text-clock"> 3 days left</p>
       </div>    
     </div>
-    <div class="container-hr">
-      <hr class="code-hr">
-    </div>
+    <div class="line"></div>
     <div class="container-profile">
-      <img src="images/image-avatar.png" alt="">
+      <img src="images/image-avatar.png" alt="Image Avatar">
       <p class="text-info"><span class="text-create"> Creation of </span>Jules Wyvern</p>
     </div>
   </div>
