@@ -27,13 +27,34 @@ body {
     padding: 1rem;
     gap: 1rem;
 }
-
+.container-img{
+    position: relative;
+}
 .container-img img {
     width: 100%;
     height: 220px;
     border-radius: .5rem;
 }
+.card-overlay {
+    display: flex;
+    position: absolute; 
+    border-radius: .5rem;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%, .5);
+    opacity: 0;
+    transition: ease-in-out 1s;
+    cursor: pointer;
+}
 
+.card-overlay:hover {
+    opacity: 1;
+    transition: ease-out transform 1s;
+}
 .container-text {
     display: flex;
     flex-direction: column;
@@ -46,6 +67,11 @@ body {
     font-weight: 600;
 }
 
+.title:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    transition: 1s;
+}
 .description {
     margin: 0;
     font-size: 300;
@@ -110,6 +136,14 @@ body {
     font-weight: 400;
 }
 
+.text-info:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    transition: 1s;
+}
+@media (max-width: 600px) {
+    
 
+}
 
 
